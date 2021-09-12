@@ -28,7 +28,7 @@
                         <td>{{$item->fullName}}</td>
                         <td>{{$item->email}}</td>
                         <td>{{$item->phone}}</td>
-                        <td><a href="{{$item->company->website}}" target=“_blank”>{{$item->company->name}}</a></td>
+                        <td><a href="{{$item->company->website}}" title="{{$item->company->website}}" id="open">{{$item->company->website}}</a></td>
                         <td>
                           <a href="{{ route('employee.edit',$item->id) }}" class="btn btn-info" title="Edit Data">
                               <i class="fas fa-edit"></i>

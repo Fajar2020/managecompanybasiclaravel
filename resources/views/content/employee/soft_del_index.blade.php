@@ -28,7 +28,7 @@
                         <td>{{$item->fullName}}</td>
                         <td>{{$item->email}}</td>
                         <td>{{$item->phone}}</td>
-                        <td><a href="{{$item->company->website}}" target=“_blank”>{{$item->company->name}}</a></td>
+                        <td><a href="{{$item->company->website}}" title="{{$item->company->website}}" id="open">{{$item->company->website}}</a></td>
                         <td>
                             <a href="{{ url('employee/restore/'.$item->id) }}" class="btn btn-info" title="Restore Employee"><i class="fas fa-trash-restore"></i></a>
                             <a href="{{ url('employee/pdelete/'.$item->id) }}" class="btn btn-danger" title="Delete Permanenly" id="delete"><i class="fa fa-trash"></i></a>

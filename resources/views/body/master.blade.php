@@ -166,6 +166,15 @@
 </script> 
 
 
+<script type="text/javascript">
+  $(function(){
+    $(document).on('click','#open',function(e){
+        e.preventDefault();
+        var link = $(this).attr("href");
+        window.open(link, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    });
+  });
+</script> 
 
 
 <script>
